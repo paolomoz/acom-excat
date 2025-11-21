@@ -1,0 +1,92 @@
+/* Button List Centered Block */
+/* Based on Figma design node 750:17259 */
+
+.button-list-centered {
+  background: #fff;
+  padding: 56px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-list-centered .blc-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Heading */
+.button-list-centered .blc-heading {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+/* Buttons wrapper - 5 buttons per row */
+.button-list-centered .blc-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 24px;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.button-list-centered .blc-buttons a {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2c2c2c;
+  background: transparent;
+  border: 2px solid #2c2c2c;
+  border-radius: 100px;
+  padding: 9px 18px 10px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button-list-centered .blc-buttons a:hover {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .button-list-centered {
+    padding: 40px 24px;
+  }
+
+  .button-list-centered .blc-heading {
+    font-size: 32px;
+  }
+
+  .button-list-centered .blc-buttons {
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+  }
+
+  .button-list-centered .blc-buttons a {
+    font-size: 15px;
+    padding: 7px 16px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .button-list-centered .blc-heading {
+    font-size: 28px;
+  }
+
+  .button-list-centered .blc-buttons {
+    grid-template-columns: repeat(2, auto);
+  }
+}

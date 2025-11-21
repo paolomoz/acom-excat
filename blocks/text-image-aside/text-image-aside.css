@@ -1,0 +1,106 @@
+/* Text Image Aside Block */
+/* Based on Figma design node 750:17216 */
+
+.text-image-aside {
+  background: #fff;
+  padding: 56px 0;
+}
+
+.text-image-aside .tia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+}
+
+/* Text column - fixed 600px width */
+.text-image-aside .tia-text {
+  width: 600px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-image-aside .tia-heading {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.text-image-aside .tia-body p {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+/* Image column - grows to fill remaining space */
+.text-image-aside .tia-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.text-image-aside .tia-image img,
+.text-image-aside .tia-image picture img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .text-image-aside .tia-container {
+    max-width: 100%;
+    padding: 0 32px;
+    gap: 60px;
+  }
+
+  .text-image-aside .tia-text {
+    width: 500px;
+  }
+
+  .text-image-aside .tia-heading {
+    font-size: 32px;
+  }
+
+  .text-image-aside .tia-body p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .text-image-aside {
+    padding: 40px 0;
+  }
+
+  .text-image-aside .tia-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .text-image-aside .tia-text {
+    width: 100%;
+  }
+
+  .text-image-aside .tia-heading {
+    font-size: 28px;
+  }
+
+  .text-image-aside .tia-body p {
+    font-size: 16px;
+  }
+}

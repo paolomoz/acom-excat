@@ -1,0 +1,82 @@
+/* Logo Gallery Block */
+/* Based on Figma design node 751:40574 */
+/* 5 logo images in a row */
+
+.logo-gallery {
+  background: #1e1e1e;
+  padding: 56px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-gallery .lg-grid {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo Container */
+.logo-gallery .lg-logo {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.logo-gallery .lg-logo picture {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-gallery .lg-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .logo-gallery {
+    padding: 40px 24px;
+  }
+
+  .logo-gallery .lg-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-gallery .lg-grid {
+    gap: 32px;
+  }
+
+  .logo-gallery .lg-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-gallery .lg-grid {
+    gap: 24px;
+  }
+
+  .logo-gallery .lg-logo {
+    width: 64px;
+    height: 64px;
+  }
+}

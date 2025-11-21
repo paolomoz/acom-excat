@@ -1,0 +1,187 @@
+/* Hero Split Marquee Block */
+/* Based on Figma design node 750:17215 */
+
+/* Override default EDS wrapper max-width */
+.hero-split-marquee-wrapper {
+  max-width: none !important;
+}
+
+.hero-split-marquee {
+  background: #000;
+  width: 100%;
+  min-height: 560px;
+}
+
+.hero-split-marquee .hsm-wrapper {
+  display: flex;
+  max-width: 1920px;
+  min-height: 560px;
+  margin: 0 auto;
+}
+
+/* Left content section - 50% width */
+.hero-split-marquee .hsm-left {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 56px 0;
+}
+
+.hero-split-marquee .hsm-content-box {
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+/* Product logo */
+.hero-split-marquee .hsm-logo {
+  margin-bottom: 24px;
+}
+
+.hero-split-marquee .hsm-logo img {
+  height: 23.27px;
+  width: auto;
+}
+
+/* Heading */
+.hero-split-marquee .hsm-heading {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0 0 16px 0;
+}
+
+/* Body text */
+.hero-split-marquee .hsm-body {
+  margin-bottom: 24px;
+}
+
+.hero-split-marquee .hsm-body p {
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+}
+
+/* CTA buttons */
+.hero-split-marquee .hsm-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.hero-split-marquee .hsm-cta a {
+  background: #4069fd;
+  color: #fff;
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 12px 24px 14px;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.hero-split-marquee .hsm-cta a:hover {
+  background: #3454d1;
+}
+
+/* Right image section - 50% width */
+.hero-split-marquee .hsm-right {
+  flex: 0 0 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-split-marquee .hsm-right img,
+.hero-split-marquee .hsm-right picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1200px) {
+  .hero-split-marquee .hsm-content-box {
+    width: 440px;
+    margin-right: 60px;
+  }
+
+  .hero-split-marquee .hsm-heading {
+    font-size: 36px;
+  }
+
+  .hero-split-marquee .hsm-body p {
+    font-size: 20px;
+  }
+}
+
+/* Mobile landscape and portrait tablets */
+@media (max-width: 900px) {
+  .hero-split-marquee .hsm-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-split-marquee .hsm-left,
+  .hero-split-marquee .hsm-right {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .hero-split-marquee .hsm-left {
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .hero-split-marquee .hsm-content-box {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 0;
+  }
+
+  .hero-split-marquee .hsm-right {
+    min-height: 400px;
+  }
+
+  .hero-split-marquee .hsm-heading {
+    font-size: 32px;
+  }
+
+  .hero-split-marquee .hsm-body p {
+    font-size: 18px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 600px) {
+  .hero-split-marquee .hsm-heading {
+    font-size: 28px;
+  }
+
+  .hero-split-marquee .hsm-body p {
+    font-size: 16px;
+  }
+
+  .hero-split-marquee .hsm-cta a {
+    font-size: 17px;
+    padding: 10px 20px 12px;
+  }
+
+  .hero-split-marquee .hsm-right {
+    min-height: 300px;
+  }
+}

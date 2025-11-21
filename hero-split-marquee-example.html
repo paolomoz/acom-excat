@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Split Marquee Example</title>
+  <link rel="stylesheet" href="blocks/hero-split-marquee/hero-split-marquee.css">
+</head>
+<body>
+  <div class="hero-split-marquee">
+    <div>
+      <div>
+        <picture>
+          <img src="https://www.adobe.com/content/dam/cc/icons/firefly-app-icon.svg" alt="Adobe Firefly">
+        </picture>
+      </div>
+      <div>
+        <h1>Lorem ipsum dolor sit amet consectetur. Nunc ut egestas orci iaculis sit bibendum placerat purus.</h1>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur. Nunc ut egestas orci iaculis sit bibendum placerat purus. Viverra pretium neque vulputate volutpat elementum.</p>
+      </div>
+      <div>
+        <a href="https://firefly.adobe.com">Create with Firefly</a>
+      </div>
+      <div>
+        <picture>
+          <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=1200&h=800&fit=crop" alt="AI generated art background">
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import decorate from './blocks/hero-split-marquee/hero-split-marquee.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const block = document.querySelector('.hero-split-marquee > div');
+      if (block) {
+        decorate(block);
+      }
+    });
+  </script>
+</body>
+</html>

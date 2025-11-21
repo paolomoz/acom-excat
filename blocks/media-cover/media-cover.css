@@ -1,0 +1,30 @@
+.media-cover-container .media-cover-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.media-cover {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.media-cover picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.media-cover img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (width >= 900px) {
+  .media-cover {
+    min-height: 500px;
+  }
+}

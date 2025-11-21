@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Cover Sample</title>
+  <meta name="description" content="Sample page demonstrating the media-cover block">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div>
+      <div class="media-cover">
+        <div>
+          <div>
+            <picture>
+              <source type="image/webp" srcset="https://via.placeholder.com/1920x1080.webp" media="(min-width: 600px)">
+              <source type="image/webp" srcset="https://via.placeholder.com/750x1000.webp">
+              <source type="image/jpeg" srcset="https://via.placeholder.com/1920x1080" media="(min-width: 600px)">
+              <img loading="lazy" alt="Sample background image" src="https://via.placeholder.com/750x1000" width="750" height="1000">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1>Media Cover Block Demo</h1>
+      <p>This page demonstrates the media-cover block, which displays a full-width background image.</p>
+      <p>The image above fills the entire width of the viewport and maintains its aspect ratio using object-fit: cover.</p>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
