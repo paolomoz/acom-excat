@@ -1,4 +1,8 @@
 /* stylelint-disable max-line-length */
+
+/* Adobe Clean font from Adobe Fonts (Typekit) */
+@import url('https://use.typekit.net/hah7vzn.css');
+
 @font-face {
   font-family: roboto-condensed;
   font-style: normal;
